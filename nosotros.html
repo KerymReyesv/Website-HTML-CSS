@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <!---------------------------------- NAV-BAR --------------------------------------->
+
+
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            <div class="icono-menu" id="menu-mobile">
+                <i class="fa-solid fa-bars" id="icono-hamburguesa"></i>
+            </div>
+        </div>
+        <div class="container-nav" id="menu-movimiento">
+            <nav class="menu-nav">
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html">Productos</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <nav class="menu-social">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!---------------------------------- SECTION NOSOTROS --------------------------------------->
+
+
+    <section id="nosotros">
+        <div class="container-nosotros">
+            <h2>NUESTRA HISTORIA</h2>
+            <p>Como empresa suiza centrada en la innovación y la calidad, Logitech diseña productos y experiencias que ocupan un lugar cotidiano en la vida de las personas. Durante más de 40 años, hemos ampliado nuestra experiencia en el diseño de productos y nuestro alcance global. Nuestros productos se centran en cómo nuestros clientes se conectan e interactúan con el mundo digital. Mantenemos el diseño en el centro de todo lo que creamos, en cada equipo y en cada disciplina, para crear experiencias verdaderamente únicas y significativas.
+                Con productos vendidos en casi todos los países del mundo,
+                Logitech diseña productos que ayudan a las empresas a prosperar y a unir a las personas a través de la música, 
+                los juegos, el streaming, el video y la computación. Entre las marcas de la empresa están Logitech, Logitech G,
+                ASTRO Gaming, Ultimate Ears, Jaybird, Blue Microphones y Streamlabs.
+            </p>
+        </div>
+        <div class="container-images">
+                <img src="img/imagen1.webp" alt="presion">
+                <img src="img/imagen2.webp" alt="mouse">
+                <img src="img/imagen3.webp" alt="edificio logitech">
+                <img src="img/imagen4.webp" alt="empleados">
+        </div>    
+    </section>
+
+    <!---------------------------------- FOOTER --------------------------------------->
+
+
+    <footer>
+        <div class="logo"><img src="img/logo.png" alt="logo de empresa"></div>
+        <div class="info">
+            <h4>Mi Tecnología</h4>
+            <h4>San Salvador, El Salvador</h4>
+            <h4>callcenter@logitech.com</h4>
+        </div>
+        <div class="social-media">
+            <nav class="menu-social">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <!------------------------------------------------- JAVASCRIPT -------------------------------------------->
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        const menu = document.getElementById('menu-mobile');
+        const movimiento = document.getElementById('menu-movimiento');
+        const icono = document.getElementById('icono-hamburguesa');
+
+        menu.addEventListener('click', function(){
+            if (movimiento.className === 'container-nav'){
+                movimiento.className += ' container-nav-2';
+                icono.className += ' fa-x';
+            }else {
+                movimiento.className = 'container-nav';
+                icono.className = 'fa-solid fa-bars';
+            }
+        });
+    </script>
+</body>
+</html>

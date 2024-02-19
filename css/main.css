@@ -1,0 +1,441 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+@font-face{
+    font-family: fuente-gamer;
+    src: url(../fonts/Horyzen\ Bold.ttf);
+}
+
+
+
+/*------------------------------------------- CSS NAV-BAR ----------------------------------------*/
+
+.header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: #5b595e;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+section{
+    padding: 10px 0px 10px 0px;
+}
+.logo img{
+    height: 60px;
+    width: 250px;
+}
+.logo{
+    width: 20%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu-nav{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.container-nav{
+    width: 80%;
+    display: flex;
+}
+.menu a{
+    padding: 10px 15px 10px 15px;
+    margin: 0px 5px 0px 5px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 1s;
+    border-radius: 5px;
+}
+.menu a:hover{
+    color: #4e5252;    
+    background-color: aqua;
+}
+.menu-social ul{
+    list-style: none;
+    display: flex;
+}
+.social-media i{
+    padding: 25px;
+    font-size: 25px;
+}
+.social-media i:hover{
+    color: aqua;
+}
+.social-media{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*-------------------------------------------- CSS SECTIONS MAIN  -------------------------------------*/
+
+.hero{
+    background-image: url(../img/banner.png);
+    width: 100%;
+    height: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.hero h1{
+    margin-top: 40px;
+    color: rgb(209 194 138);
+    background-color: rgba(66, 70, 73, 0.63);
+    padding: 20px;
+    border-radius: 50px;
+}
+.gamers{
+    padding: 0px 10px 0px 10px;
+    font-family: fuente-gamer;
+    font-size: 50px;
+}
+.title-secondary{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-family: fuente-gamer;
+}
+.background-section-1{
+    background-image: linear-gradient(#103d81, #a782ec,#6e39eb);
+    scroll-margin-top: 80px;
+}
+.first-box{
+    display: flex;
+    padding: 5%;
+}
+.first-box img{
+    width: 50%;
+    padding: 2%;
+}
+.first-box p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: justify;
+    padding: 2%;
+}
+.first-box h4{
+    color: white;
+    padding: 2%;
+    font-size: 22px;
+    font-weight: 600px;
+}
+
+.background-section-2{
+    background-image: linear-gradient(#6e39eb,#a782ec,#103d81);
+}
+.container-colores{
+    display: flex;
+    
+    
+}
+.color-blanco{
+    margin-left: 20px;
+    margin-top: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #f6f6f6; 
+    border-radius: 50%;
+    border: solid #333; 
+}
+.color-rosa{
+    margin-left: 20px;
+    margin-top: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #e56fb8; 
+    border-radius: 50%; 
+    border: solid #333; 
+}
+
+/*--------------------------------------------- CSS FOOTER -------------------------------------------*/
+
+footer{
+    display: flex;
+    background-color: #4e5252;
+    padding: 0px 25px 0px 25px;
+}
+.info{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.info h4{
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+.icono-menu{
+    display: none;
+}
+
+/*-------------------------------------- SECTION NOTICIAS ---------------------------------------------------*/
+
+.container-noticias{
+    background-image: linear-gradient(#ffffff,#bbb8c3,#e1e6ec);
+}
+.container-noticias h2{
+    color: black;
+}
+.container-noticias h4{
+    color: #333;
+}
+
+
+/*-------------------------------------- SECTION NOSOTROS ---------------------------------------------------*/
+
+#nosotros{
+    background-image: linear-gradient(#ffffff,#bbb8c3,#e1e6ec);
+}
+.container-nosotros{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+.container-nosotros h2{
+    font-family: fuente-gamer;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 40px;
+}
+.container-nosotros p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: justify;
+    padding: 8%;
+}
+.container-images {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   column-gap: 20px;
+   row-gap: 20px;
+   justify-content: center; 
+   align-items: center; 
+   padding: 0px 200px 60px;   
+}
+.container-images img{
+    border-radius: 30px;
+}
+
+/*--------------------------------------- SECTION CONTACTO ------------------------------------------*/
+
+#contacto{
+    background-image: linear-gradient(#ffffff,#bbb8c3,#e1e6ec);
+}
+#contacto h2{
+    font-family: fuente-gamer;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 40px;
+    margin: 50px;
+    margin-top: 100px;
+}
+.oficinas h3{
+    font-family: fuente-gamer;
+    text-align: left;
+    margin:50px;
+    margin-top: 150px;
+    margin-left: 100px;
+    font-size: 30px;
+}
+.container-contacto ul{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 90px;
+    margin: 100px;
+    margin-bottom: 20px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+.formulario {
+    width: 100%;
+    max-width: 450px;
+    margin: 20px;
+    background-color: #b8bec19a;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 198, 242, 0.743);
+  }
+  .formulario h2{
+    font-family: fuente-gamer;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 40px;
+  }
+
+  form {
+    display: grid;
+    gap: 25px;
+    padding: 8%;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+
+  button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  button:hover {
+    background-color: #2980b9;
+  }
+
+/* -----------------------------------------------  MAP -------------------------------------------------*/
+
+.container-map{
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.map{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.map h3{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-family: fuente-gamer;
+    font-size: 40px;
+    margin-top: 15px;
+}
+.iframe{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*------------------------------------------- MEDIA QUERI - RESPONSIVE WEB ------------------------------------------*/
+
+
+@media only screen and (max-width: 768px){
+    .logo{
+        width: 100%;
+        position: relative;
+        z-index: 999;
+        background-color: #4e5252;
+    }
+    .menu-nav{
+        width: 100%;
+    }
+    .social-media{
+        width: 100%;
+    }
+    .menu{
+        display: block;
+    }
+    .menu li{
+        text-align: center;
+        margin: 30px 0px;
+    }
+    .hero{
+        width: 100%;
+        height: 500px;
+        background-position:  center;
+    }
+    .icono-menu{
+        display: block;
+        color: #FFFFFF;
+        font-size: 20px;
+        padding: 8px 10px 8px 10px;
+    }
+    .container-nav{
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: -250px;
+        background-color: #4e5252;
+        transition: 1s ease top;
+        margin-top: -35px;
+        z-index: -500;
+    }
+    .container-nav-2{
+        top: 117px;
+    }
+    .container-contacto ul li{
+        margin: 20px;
+        text-align: justify; 
+    }
+    .oficinas,
+    h2,
+    h3,
+    .container-map,
+    .formulario {
+        display: block;
+        padding: 20px;
+        max-width: 100%;
+    }
+    .formulario{
+        width: 90%;
+    }
+    .oficinas h3{
+        text-align: center;
+        margin: 10px;
+        margin-bottom: -50px; 
+    }
+    footer{
+        flex-wrap: wrap;
+    }
+    .first-box{
+        display: block;
+    }
+    .first-box img{
+        width: 100%;
+        padding: 0px;
+    }
+    #nosotros{
+        display: block;
+        flex-wrap: wrap;
+    }
+    .container-images{
+        grid-template-columns: 1fr;
+    }
+    .info{
+        width: 100%;
+    }
+} 

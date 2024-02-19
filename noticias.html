@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <!----------------------- BARRA DE NAVEGACION --------------------------------->
+
+
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            <div class="icono-menu" id="menu-mobile">
+                <i class="fa-solid fa-bars" id="icono-hamburguesa"></i>
+            </div>
+        </div>
+        <div class="container-nav" id="menu-movimiento">
+            <nav class="menu-nav">
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <nav class="menu-social">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <!---------------------------------- SECTION NOTICIAS --------------------------------------->
+
+
+    <section class="container-noticias">
+        <div data-aos="fade-right" data-aos-duration="1500">
+            <h2 class="title-secondary">Próximas conferencias de Logitech  <span class="gamers"></span></h2>
+            <div class="first-box">
+                
+                <div>
+                    <h4>LAUSANNE, Switzerland & SAN JOSE, Calif.--(BUSINESS WIRE)-- Logitech International (SIX: LOGN) (Nasdaq: LOGI) today announced that Company leaders plan to participate at the following investor conferences:</h4>
+                    <p>Goldman Sachs European Technology Conference <br>
+                        Thursday, February 22, 2024, at 12:30 p.m. GMT <br>
+                        Location: London
+
+                    </p>
+                    
+                    <p>
+                        Morgan Stanley Technology, Media & Telecom Conference <br>
+                        Tuesday, March 5, 2024, 2:00 p.m. PST <br>
+                        Location: San Francisco
+                    </p>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <section class="container-noticias">
+        <div data-aos="fade-right" data-aos-duration="1500">
+            
+            <div class="first-box">
+                
+                <div>
+                    <h4>LAUSANNE, Switzerland & SAN JOSE, Calif.--(BUSINESS WIRE)-- Today, Logitech (SIX: LOGN) (NASDAQ: LOGI)</h4>
+                    <p>announced that after a successful Indiegogo Enterprise campaign, Logitech Reach is starting the next phase of development:
+                         mass production and availability in the education marketplace this summer. <br>
+                         Reach is a flexible and intuitive camera featuring the Logitech StreamCam that allows users to stay in the flow of presenting while sharing non-digital 
+                         content during in-person presentations, classes, conference calls and streamer/creator sessions. <br>
+                        Location: London
+
+                    </p> <br>
+                    
+                    <p>
+                        Morgan Stanley Technology, Media & Telecom Conference <br>
+                        Tuesday, March 30, 2024, 2:00 p.m. PST <br>
+                        Location: London
+                    </p>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <section class="container-noticias">
+        <div data-aos="fade-right" data-aos-duration="1500">
+            <div class="first-box">
+                
+                <div>
+                    <h4>Logitech Announces Date for Release of Third Quarter Results for Fiscal Year 2024</h4>
+                    <p>announced that after a successful Indiegogo Enterprise campaign, Logitech Reach is starting the next phase of development:
+                         mass production and availability in the education marketplace this summer. <br>
+                         Reach is a flexible and intuitive camera featuring the Logitech StreamCam that allows users to stay in the flow of presenting while sharing non-digital 
+                         content during in-person presentations, classes, conference calls and streamer/creator sessions. <br>
+                        Location: London
+
+                    </p> <br>
+                    
+                    <p>
+                        Morgan Stanley Technology, Media & Telecom Conference <br>
+                        Tuesday, May 30, 2024, 2:00 p.m. PST <br>
+                        Location: Denmark
+                    </p>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <!---------------------------------- FOOTER --------------------------------------->
+
+    <footer>
+        <div class="logo"><img src="img/logo.png" alt="logo de empresa"></div>
+        <div class="info">
+            <h4>LOGITECH</h4>
+            <h4>San Salvador, El Salvador</h4>
+            <h4>callcenter@logitech.com</h4>
+        </div>
+        <div class="social-media">
+            <nav class="menu-social">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    
+    <!------------------------------------------------------ JAVASCRIPT ---------------------------------------------->
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        const menu = document.getElementById('menu-mobile');
+        const movimiento = document.getElementById('menu-movimiento');
+        const icono = document.getElementById('icono-hamburguesa');
+
+        menu.addEventListener('click', function(){
+            if (movimiento.className === 'container-nav'){
+                movimiento.className += ' container-nav-2';
+                icono.className += ' fa-x';
+            }else {
+                movimiento.className = 'container-nav';
+                icono.className = 'fa-solid fa-bars';
+            }
+        });
+    </script>
+
+</body>
+</html>
